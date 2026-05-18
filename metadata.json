@@ -1,0 +1,8 @@
+{
+  "name": "Catalyst Pentest Suite",
+  "description": "A comprehensive security toolkit for reconnaissance, network analysis, and AI-powered vulnerability assessment inspired by Kali Linux.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-dark: #0a0a0b;
+  --color-surface: #161618;
+  --color-border-main: #2a2a2d;
+  --color-accent-green: #00ff41;
+  --color-accent-blue: #00a8ff;
+  --color-accent-red: #ff4d4d;
+  --color-text-main: #e0e0e0;
+  --color-text-dim: #7a7a7a;
+  
+  --font-mono: "JetBrains Mono", "Courier New", Courier, monospace;
+  --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+
+:root {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-main);
+  font-family: var(--font-sans);
+}
+
+/* Custom Scrollbar for Hacker UI */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--color-bg-dark);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-border-main);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent-blue);
+}
+
+/* Panel System */
+.panel {
+  background: rgba(10, 10, 11, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--color-border-main);
+  padding: 1rem;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  font-size: 0.7rem;
+  color: var(--color-text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+}
+
+/* Markdown Styling */
+.markdown-body h1, .markdown-body h2, .markdown-body h3 {
+  color: var(--color-accent-blue);
+  font-family: inherit;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.markdown-body p {
+  color: var(--color-text-main);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+
+.markdown-body ul {
+  list-style-type: square;
+  margin-left: 1.5rem;
+  color: var(--color-text-main);
+  font-size: 0.875rem;
+}
+
+.markdown-body code {
+  background: var(--color-surface);
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.85em;
+  color: var(--color-accent-green);
+}
+
